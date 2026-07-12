@@ -1,0 +1,49 @@
+---
+title: 'Data Mining Final Project'
+author: "Jaypee P. So"
+output: html_document
+---
+
+Executive Summary
+
+For our data mining project, we completed an Exploratory Data Analysis (EDA) on the hotel booking dataset. We wanted to look closely at booking patterns, specifically how cancellations vary by hotel type, how early people book, seasonal trends, deposit policies, and where bookings actually come from. These findings are super important because they will help us decide which features to focus on when we start training our predictive machine learning models.
+
+1.  Operational Proportions: Baseline Cancellation Ratios
+
+My Contribution: I set up the proportional bar chart, customized the colors to clearly distinguish between checked-in and canceled statuses, and analyzed how cancellation rates differ between city and resort hotels.
+
+Section Analysis:
+
+When we compare the two types of hotels, there is a massive difference in how often people cancel. City hotels have a much higher percentage of cancellations than resort hotels. This makes a lot of sense if you think about the travelers: people going to city hotels are often traveling for quick business trips or weekend getaways where plans change easily. On the other hand, resort guests are usually booking long, expensive vacations, which they are much less likely to cancel.
+
+2.  Lead Time Thresholds and Commitment Decay
+
+My Contribution: I built the horizontal boxplots to show how lead times are distributed, adjusted the outlier display settings so they don't clutter the chart, and analyzed the relationship between booking early and cancelling.
+
+Section Analysis:
+
+Looking at the lead time (how many days in advance a room is booked) reveals a really strong pattern: the further out someone books, the more likely they are to cancel. Canceled bookings have a much higher middle lead time than bookings where guests actually checked in. This tells us that planning too far in advance introduces a lot of uncertainty. Because of this, lead time is going to be one of our most important variables when we train our models.
+
+3.  Macro Seasonal Demand Volatility
+
+My Contribution: I organized the arrival months in chronological order, created the line-and-point comparison chart, and analyzed the high-season summer trends.
+
+Section Analysis:
+
+When we map out booking volumes month-by-month, both hotels show a massive summer rush. Bookings spike in July and August for both city and resort properties. This lines up perfectly with school summer breaks and family vacations. Knowing exactly when these peak seasons hit is incredibly useful for hotels to manage their staffing and adjust their room pricing.
+
+4.  The Policy Paradox: Deposit Types vs. Cancellations
+
+My Contribution: I created the stacked bar chart for deposit types, adjusted the percentage scales on the axis, and analyzed the weird trend with non-refundable deposits.
+
+Section Analysis:
+
+The deposit data shows a really weird paradox. You would expect that people who put down a "Non-Refundable" deposit would almost never cancel, since they'd lose their money. But the data shows the exact opposite: almost everyone with a non-refundable deposit canceled. This weird trend usually happens because travel agencies or tour groups book huge blocks of rooms under non-refundable terms, and then cancel them all at once if their group tours don't fill up.
+
+5.  Ecosystem Inflow: Market Segment Channels
+
+My Contribution: I created the side-by-side bar chart showing booking segments, formatted the numbers on the y-axis to make them readable, and analyzed where most guests are booking.
+
+Section Analysis:
+
+If we look at where bookings actually come from, Online Travel Agencies (like Expedia or Booking.com) are by far the biggest source of customers for both hotels, but especially for city hotels. This shows just how dependent these hotels are on third-party websites, while direct bookings or corporate travel accounts make up a much smaller slice of the pie.
